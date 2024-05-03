@@ -6,7 +6,7 @@ import { store } from "../../../../store/store";
 interface PatientDetailsProps {
   patient: Patient;
 }
-const ServiceDetails: React.FC<PatientDetailsProps> = ({ patient }) => {
+const PatientDetails: React.FC<PatientDetailsProps> = ({ patient }) => {
   if (patient.serviceId) {
     patient.service = useSelector(selectService);
 
@@ -42,4 +42,4 @@ const ServiceDetails: React.FC<PatientDetailsProps> = ({ patient }) => {
   );
 };
 
-export default ServiceDetails;
+export default PatientDetails;

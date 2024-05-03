@@ -42,10 +42,10 @@ namespace api.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateDoctor([FromBody] DoctorCreationDto doctorDto)
         {
-            var result = await _doctorService.CreateDoctor(doctorDto);
-            if (result)
+            var (resNewDoctor, success) = await _doctorService.CreateDoctor(doctorDto);
+            if (success)
             {
-                return Ok("Doctor created successfully");
+                return Ok(resNewDoctor);
             }
             return BadRequest("Failed to create doctor");
         }
@@ -53,10 +53,10 @@ namespace api.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateDoctor([FromRoute] int id, [FromBody] DoctorCreationDto doctorDto)
         {
-            var result = await _doctorService.UpdateDoctor(id, doctorDto);
-            if (result)
+            var (resUpdatedDoctor, success) = await _doctorService.UpdateDoctor(id, doctorDto);
+            if (success)
             {
-                return Ok($"Doctor with ID {id} updated successfully");
+                return Ok(resUpdatedDoctor);
             }
             return BadRequest($"Failed to update doctor with ID {id} ");
         }
@@ -67,7 +67,7 @@ namespace api.Controllers
             var result = await _doctorService.DeleteDoctor(id);
             if (result)
             {
-                return Ok($"Doctor with ID {id} deleted successfully");
+                return Ok(id);
             }
             return NotFound($"Doctor with ID {id} not found");
         }
