@@ -34,13 +34,13 @@ namespace Services.PatientService
             return await _context.Patients.AnyAsync(p => p.Id == id);
         }
 
-        public async Task<bool> CreatePatient(PatientCreationDto patientDto)
+        public async Task<(Patient? patient, bool success)> CreatePatient(PatientCreationDto patientDto)
         {
             // Retrieve the service associated with the provided service ID
             var service = await _context.Services.FindAsync(patientDto.ServiceId);
             if (service == null)
             {
-                return false; // Service not found
+                return (null,success: false); // Service not found
             }
 
             // Create a new patient entity and map data from DTO
@@ -53,7 +53,16 @@ namespace Services.PatientService
 
             _context.Patients.Add(patient);
 
-            return await SavePatient();
+            await SavePatient();
+            var newPatient = new Patient
+            {
+                Id = patient.Id,
+                UserName = patient.UserName,
+                Phone = patient.Phone,
+                ServiceId = patient.ServiceId
+
+            };
+            return (patient: newPatient, success: true);
         }
 
         public async Task<bool> UpdatePatient(int id, PatientCreationDto patientDto)

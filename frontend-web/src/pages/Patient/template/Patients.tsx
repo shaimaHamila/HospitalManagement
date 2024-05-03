@@ -1,37 +1,39 @@
 import { Button, Popconfirm, Space, Table, TableProps, Tooltip } from "antd";
 import Input, { SearchProps } from "antd/es/input";
 import { useEffect, useState } from "react";
-import { ServicesProps } from "./ServicesProps";
-import { service } from "../../../types/Service";
+import { PatientsProps } from "./PatientsProps";
 import Title from "antd/es/typography/Title";
 import { HiOutlineEye, HiOutlinePencilAlt, HiOutlinePlus, HiOutlineTrash } from "react-icons/hi";
-import "./Services.scss";
+import "./Patients.scss";
+import { Patient } from "../../../types/Patient";
 
-const Services: React.FC<ServicesProps> = ({
-  services,
+const Patients: React.FC<PatientsProps> = ({
+  patients,
   status,
-  handleViewService,
-  handleEditService,
-  handleDeleteService,
-  handleCreateService,
-}: ServicesProps) => {
+  handleViewPatient,
+  handleEditPatient,
+  handleDeletePatient,
+  handleCreatePatient,
+}: PatientsProps) => {
   const { Search } = Input;
   const onSearch: SearchProps["onSearch"] = (value, _e, info) => console.log(info?.source, value);
 
-  const [tableContent, setTableContent] = useState<service[]>([]);
-  const [countServices, setcountServices] = useState(tableContent.length);
+  const [tableContent, setTableContent] = useState<Patient[]>([]);
+  const [countPatients, setcountPatients] = useState(tableContent.length);
+
   useEffect(() => {
     // Extract specific fields from services and populate tableContent
-    const tableContent = services.map((service) => ({
-      id: service.id,
-      name: service.name,
-      description: service.description,
+    const tableContent = patients.map((patient) => ({
+      id: patient.id,
+      userName: patient.userName,
+      phone: patient.phone,
+      serviceId: patient.serviceId,
     }));
     setTableContent(tableContent);
-    setcountServices(tableContent.length);
-  }, [services]);
+    setcountPatients(tableContent.length);
+  }, [patients]);
 
-  const columns: TableProps<service>["columns"] = [
+  const columns: TableProps<Patient>["columns"] = [
     {
       title: "ID",
       dataIndex: "id",
@@ -39,15 +41,20 @@ const Services: React.FC<ServicesProps> = ({
       width: 50,
     },
     {
-      title: "Service Name",
-      dataIndex: "name",
-      key: "name",
-      render: (text) => <div style={{ display: "flex", gap: "6px" }}>{text}</div>,
+      title: "Patient Name",
+      dataIndex: "userName",
+      key: "userName",
+    },
+
+    {
+      title: "Phone number",
+      dataIndex: "phone",
+      key: "phone",
     },
     {
-      title: "Description",
-      dataIndex: "description",
-      key: "description",
+      title: "Service ID",
+      dataIndex: "serviceId",
+      key: "serviceId",
     },
     {
       title: "Action",
@@ -56,17 +63,17 @@ const Services: React.FC<ServicesProps> = ({
       render: (_text, record) => (
         <Space size='middle'>
           <Tooltip title='View'>
-            <Button onClick={() => handleViewService(record)} className='table--action-btn' icon={<HiOutlineEye />} />
+            <Button onClick={() => handleViewPatient(record)} className='table--action-btn' icon={<HiOutlineEye />} />
           </Tooltip>
           <Tooltip title='Edit'>
             <Button
-              onClick={() => handleEditService(record)}
+              onClick={() => handleEditPatient(record)}
               className='table--action-btn'
               icon={<HiOutlinePencilAlt />}
             />
           </Tooltip>
           <Tooltip title='Delete'>
-            <Popconfirm title='Sure to delete?' onConfirm={() => handleDeleteService(record.id)}>
+            <Popconfirm title='Sure to delete?' onConfirm={() => handleDeletePatient(record.id)}>
               <Button className='table--action-btn' icon={<HiOutlineTrash />} />
             </Popconfirm>
           </Tooltip>
@@ -78,7 +85,7 @@ const Services: React.FC<ServicesProps> = ({
   return (
     <div className='service-container'>
       <div className='service-container--header'>
-        <Title level={4}> Total Services number: {countServices}</Title>
+        <Title level={4}> Total Patients number : {countPatients}</Title>
         <div className='service-container--header-actions'>
           <Search
             className='service-container--header-actions-search'
@@ -89,12 +96,12 @@ const Services: React.FC<ServicesProps> = ({
           />
           <Button
             onClick={() => {
-              handleCreateService();
+              handleCreatePatient();
             }}
             type='primary'
             icon={<HiOutlinePlus />}
           >
-            Add a new service
+            Add a new Patient
           </Button>
         </div>
       </div>
@@ -111,4 +118,4 @@ const Services: React.FC<ServicesProps> = ({
     </div>
   );
 };
-export default Services;
+export default Patients;

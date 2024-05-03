@@ -13,8 +13,8 @@ namespace Services.DoctorService
         Task<IEnumerable<Doctor>> GetAllDoctors();
         Task<Doctor> GetDoctorById(int id);
         Task<bool> DoctorExists(int id);
-        Task<bool> CreateDoctor(DoctorCreationDto doctorDto);
-        Task<bool> UpdateDoctor(int id, DoctorCreationDto doctorDto);
+        Task<(DoctorCreationDto doctor, bool success)> CreateDoctor(DoctorCreationDto doctorDto);
+        Task<(DoctorCreationDto doctor, bool success)> UpdateDoctor(int id, DoctorCreationDto doctorDto);
         Task<bool> DeleteDoctor(int id);
         Task<bool> Save();
     }

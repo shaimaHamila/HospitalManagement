@@ -39,10 +39,10 @@ namespace api.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateService([FromBody] Service service)
         {
-            var result = await _serviceService.CreateService(service);
-            if (result)
+            var (nawService, res) = await _serviceService.CreateService(service);
+            if (res)
             {
-                return Ok("Service created successfully");
+                return Ok(nawService);
             }
             return BadRequest("Failed to create service");
         }
@@ -53,7 +53,7 @@ namespace api.Controllers
             var result = await _serviceService.UpdateService(id, service);
             if (result)
             {
-                return Ok($"Service with ID {id} updated successfully");
+                return Ok(service);
             }
             return NotFound($"Service with ID {id} not found");
         }

@@ -25,7 +25,6 @@ const Service: React.FC = () => {
   const [drawerTitle, setDrawerTitle] = useState<string>("");
   useEffect(() => {
     store.dispatch(fetchServices());
-    console.log("Fetching Services", services);
   }, []);
 
   return (
@@ -41,7 +40,6 @@ const Service: React.FC = () => {
           setDrawerContent("update");
           setDrawerTitle("Edit Service");
           setIsDrawerOpen(true);
-          console.log("Edit Service");
         }}
         handleDeleteService={(id) => {
           store.dispatch(deleteService(id));
@@ -51,13 +49,11 @@ const Service: React.FC = () => {
           setDrawerContent("details");
           setDrawerTitle("Service Details");
           setIsDrawerOpen(true);
-          // console.log("View service", service);
         }}
         handleCreateService={() => {
           setDrawerContent("create");
           setDrawerTitle("Create Service");
           setIsDrawerOpen(true);
-          console.log("Create Service");
         }}
       />
       <DrawerComponent
@@ -70,8 +66,6 @@ const Service: React.FC = () => {
                 else if (drawerContent === "update") store.dispatch(updateService(service));
                 setIsDrawerOpen(false);
                 //TODO add popup created successfuly
-                console.log("onSubmit orderrrrrrrrrrrrr", service);
-                console.log("drawerContent drawerContent", drawerContent);
               }}
               service={drawerContent === "update" ? serviceToUpdate : undefined}
             />

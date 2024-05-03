@@ -13,14 +13,6 @@ const ServiceDetails: React.FC<ServiceDetailsProps> = ({ service }) => {
         <strong>Name:</strong> {service.name}
       </p>
       <p>
-        <strong>Speciality:</strong> {service.speciality}
-      </p>
-      {service.contactNumber && (
-        <p>
-          <strong>Contact Number:</strong> {service.contactNumber}
-        </p>
-      )}
-      <p>
         <strong>Description:</strong> {service.description}
       </p>
       {service.doctor && (
@@ -29,7 +21,7 @@ const ServiceDetails: React.FC<ServiceDetailsProps> = ({ service }) => {
           <ul>
             {service.doctor.map((doctor, index) => (
               <li key={index}>
-                <strong>Name:</strong> {doctor.name}, <strong>Speciality:</strong> {doctor.speciality}
+                <strong>First Name:</strong> {doctor.firstName}, <strong>Last Name:</strong> {doctor.lastName}
               </li>
             ))}
           </ul>

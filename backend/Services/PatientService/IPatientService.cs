@@ -13,7 +13,7 @@ namespace Services.PatientService
         Task<IEnumerable<Patient>> GetAllPatients();
         Task<Patient> GetPatientById(int id);
         Task<bool> PatientExists(int id);
-        Task<bool> CreatePatient(PatientCreationDto patientDto);
+        Task<(Patient? patient, bool success)> CreatePatient(PatientCreationDto patientDto);
         Task<bool> UpdatePatient(int id, PatientCreationDto patientDto);
         Task<bool> DeletePatient(int id);
         Task<bool> SavePatient();

@@ -1,7 +1,7 @@
-import { Service } from "../../../types/Service";
+import { service } from "../../../types/Service";
 
 export interface ServicesProps {
-  services: Service[];
+  services: service[];
   status: "idle" | "loading" | "failed";
   search?: string;
   handleFilterChange: (filter: string) => void;

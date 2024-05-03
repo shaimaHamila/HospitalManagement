@@ -21,7 +21,7 @@ export const fetchDoctors = createAsyncThunk<{ doctors: Doctor[] }>("doctors/fet
     const response = await api.get("/doctor");
 
     return {
-      doctors: response.data.data,
+      doctors: response.data,
     };
   } catch (error: any) {
     throw error;
@@ -35,7 +35,7 @@ export const addDoctor = createAsyncThunk<Doctor, Partial<Doctor>, { state: Root
       api
         .post("/doctor", newDoctor)
         .then((response) => {
-          resolve(response.data.data);
+          resolve(response.data);
         })
         .catch((error) => {
           reject(error);
@@ -69,7 +69,7 @@ export const updateDoctor = createAsyncThunk<Doctor, Doctor, { state: RootState 
       api
         .patch("/doctor/" + id, newDoctor)
         .then((response) => {
-          resolve(response.data.data);
+          resolve(response.data);
         })
         .catch((error) => {
           reject(error);
@@ -149,6 +149,8 @@ const doctorSlice = createSlice({
 export const getDoctorState = (state: RootState) => state.doctor;
 
 export const selectStatus = (state: RootState) => state.doctor.status;
+
+export const selectDoctors = (state: RootState) => state.doctor.doctors;
 
 export const selectError = (state: RootState) => state.doctor.error;
 

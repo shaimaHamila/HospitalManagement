@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -32,7 +33,7 @@ namespace Services.DoctorService
             return await _context.Doctors.AnyAsync(d => d.Id == id);
         }
 
-        public async Task<bool> CreateDoctor(DoctorCreationDto doctorDto)
+        public async Task<(DoctorCreationDto doctor, bool success)> CreateDoctor(DoctorCreationDto doctorDto)
         {
             // Map DoctorCreationDto to Doctor entity
             var newDoctor = new Doctor
@@ -63,26 +64,32 @@ namespace Services.DoctorService
 
                 // Save changes
                 await _context.SaveChangesAsync();
-
-                return true;
+                var resNewDoctor = new DoctorCreationDto
+                {
+                    Id = newDoctor.Id,
+                    FirstName = newDoctor.FirstName,
+                    LastName = newDoctor.LastName,
+                    Birthday = newDoctor.Birthday,
+                    Address = newDoctor.Address,
+                    ServiceIds= doctorDto.ServiceIds,
+                };
+                return (doctor: resNewDoctor, success: true);
             }
             catch (Exception ex)
             {
-                // Log or handle the exception
-                Console.WriteLine($"Error creating doctor: {ex.Message}");
-                return false;
+                return (null, success: false);
             }
 
         }
 
-        public async Task<bool> UpdateDoctor(int id, DoctorCreationDto doctorDto)
+        public async Task<(DoctorCreationDto doctor, bool success)> UpdateDoctor(int id, DoctorCreationDto doctorDto)
         {
             var existingDoctor = await _context.Doctors
                    .Include(d => d.DoctorServices)
                    .FirstOrDefaultAsync(d => d.Id == id);
             if (existingDoctor == null)
             {
-                return false; // Doctor not found
+                return (null, success: false); // Doctor not found
             }
 
             // Map DoctorCreationDto to existing Doctor entity
@@ -123,14 +130,22 @@ namespace Services.DoctorService
 
                 // Save changes
                 await _context.SaveChangesAsync();
-
-                return true;
+                var resUpdatedDoctor = new DoctorCreationDto
+                {
+                    Id = id,
+                    FirstName = existingDoctor.FirstName,
+                    LastName = existingDoctor.LastName,
+                    Birthday = existingDoctor.Birthday,
+                    Address = existingDoctor.Address,
+                    ServiceIds = doctorDto.ServiceIds,
+                };
+                return (doctor: resUpdatedDoctor, success: true);
             }
             catch (Exception ex)
             {
                 // Log or handle the exception
                 Console.WriteLine($"Error Updating doctor: {ex.Message}");
-                return false;
+                return (null, success: false);
             }
         }
 

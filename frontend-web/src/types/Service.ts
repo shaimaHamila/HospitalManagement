@@ -1,10 +1,11 @@
 import { Doctor } from "./Dctor";
+import { Patient } from "./Patient";
 
 export type service = {
   id: number;
   name: string;
   description: string;
-  speciality: string;
-  contactNumber?: number;
+  patients?: Patient;
   doctor?: Doctor[];
+  // speciality: string;
 };
