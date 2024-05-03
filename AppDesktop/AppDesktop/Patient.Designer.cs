@@ -37,18 +37,20 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.PUT = new System.Windows.Forms.Button();
             this.IdPatient = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.DEL = new System.Windows.Forms.Button();
-            this.PUT = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // ADD
             // 
-            this.ADD.Location = new System.Drawing.Point(268, 47);
+            this.ADD.Location = new System.Drawing.Point(275, 40);
             this.ADD.Name = "ADD";
             this.ADD.Size = new System.Drawing.Size(82, 41);
             this.ADD.TabIndex = 0;
@@ -58,7 +60,7 @@
             // 
             // userName
             // 
-            this.userName.Location = new System.Drawing.Point(97, 27);
+            this.userName.Location = new System.Drawing.Point(117, 27);
             this.userName.Name = "userName";
             this.userName.Size = new System.Drawing.Size(125, 30);
             this.userName.TabIndex = 1;
@@ -66,7 +68,7 @@
             // 
             // Phone
             // 
-            this.Phone.Location = new System.Drawing.Point(97, 69);
+            this.Phone.Location = new System.Drawing.Point(117, 69);
             this.Phone.Name = "Phone";
             this.Phone.Size = new System.Drawing.Size(125, 30);
             this.Phone.TabIndex = 2;
@@ -76,7 +78,7 @@
             // 
             this.lstPatient.FormattingEnabled = true;
             this.lstPatient.ItemHeight = 16;
-            this.lstPatient.Location = new System.Drawing.Point(556, 105);
+            this.lstPatient.Location = new System.Drawing.Point(542, 65);
             this.lstPatient.Name = "lstPatient";
             this.lstPatient.Size = new System.Drawing.Size(210, 212);
             this.lstPatient.TabIndex = 4;
@@ -84,7 +86,7 @@
             // 
             // ServiceID
             // 
-            this.ServiceID.Location = new System.Drawing.Point(97, 115);
+            this.ServiceID.Location = new System.Drawing.Point(117, 115);
             this.ServiceID.Name = "ServiceID";
             this.ServiceID.Size = new System.Drawing.Size(125, 30);
             this.ServiceID.TabIndex = 5;
@@ -137,9 +139,19 @@
             this.panel1.Size = new System.Drawing.Size(406, 182);
             this.panel1.TabIndex = 9;
             // 
+            // PUT
+            // 
+            this.PUT.Location = new System.Drawing.Point(275, 99);
+            this.PUT.Name = "PUT";
+            this.PUT.Size = new System.Drawing.Size(82, 46);
+            this.PUT.TabIndex = 9;
+            this.PUT.Text = "PUT";
+            this.PUT.UseVisualStyleBackColor = true;
+            this.PUT.Click += new System.EventHandler(this.PUT_Click);
+            // 
             // IdPatient
             // 
-            this.IdPatient.Location = new System.Drawing.Point(97, 30);
+            this.IdPatient.Location = new System.Drawing.Point(117, 28);
             this.IdPatient.Name = "IdPatient";
             this.IdPatient.Size = new System.Drawing.Size(125, 30);
             this.IdPatient.TabIndex = 10;
@@ -158,6 +170,7 @@
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.DEL);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.IdPatient);
@@ -169,7 +182,7 @@
             // 
             // DEL
             // 
-            this.DEL.Location = new System.Drawing.Point(268, 28);
+            this.DEL.Location = new System.Drawing.Point(249, 28);
             this.DEL.Name = "DEL";
             this.DEL.Size = new System.Drawing.Size(75, 34);
             this.DEL.TabIndex = 12;
@@ -177,21 +190,34 @@
             this.DEL.UseVisualStyleBackColor = true;
             this.DEL.Click += new System.EventHandler(this.DEL_Click);
             // 
-            // PUT
+            // button4
             // 
-            this.PUT.Location = new System.Drawing.Point(268, 106);
-            this.PUT.Name = "PUT";
-            this.PUT.Size = new System.Drawing.Size(82, 46);
-            this.PUT.TabIndex = 9;
-            this.PUT.Text = "PUT";
-            this.PUT.UseVisualStyleBackColor = true;
-            this.PUT.Click += new System.EventHandler(this.PUT_Click);
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.button4.Location = new System.Drawing.Point(675, 367);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(77, 57);
+            this.button4.TabIndex = 16;
+            this.button4.Text = "Back";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(326, 28);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 34);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "FIND";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Patient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lstPatient);
@@ -222,5 +248,7 @@
         private System.Windows.Forms.Button PUT;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button DEL;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button1;
     }
 }

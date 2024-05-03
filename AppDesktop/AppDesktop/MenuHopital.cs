@@ -63,7 +63,23 @@ namespace AppDesktop
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            Doctor doctor = new Doctor();   
+            doctor.Show();
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Patient patient = new Patient();        
+            patient.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Service service = new Service();
+            service.Show();
         }
     }
 }

@@ -44,7 +44,7 @@ namespace AppDesktop
             lstDoctor.Items.Clear();
             foreach (var doctor in doctors)
             {
-                lstDoctor.Items.Add($"{doctor.Id} - {doctor.FirstName} {doctor.LastName} -{doctor.ServiceIds}");
+                lstDoctor.Items.Add($"{doctor.Id} - {doctor.FirstName} - {doctor.LastName} - {doctor.Address} ");
             }
         }
 
@@ -197,6 +197,13 @@ namespace AppDesktop
             {
                 MessageBox.Show("Invalid doctor ID");
             }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MenuHopital menu = new MenuHopital();
+            menu.Show();
         }
     }
     }

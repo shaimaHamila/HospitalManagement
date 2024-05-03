@@ -134,7 +134,9 @@ namespace AppDesktop
 
         private void label4_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            MenuHopital menu = new MenuHopital();
+            menu.Show();
         }
 
         private void IdPatient_TextChanged(object sender, EventArgs e)
@@ -201,6 +203,29 @@ namespace AppDesktop
             {
                 MessageBox.Show("Failed to update patient");
             }
+        }
+
+        private async void button1_Click(object sender, EventArgs e)
+        {
+            if (int.TryParse(IdPatient.Text, out int patientId))
+            {
+                PatientDto patient = await _patientApiService.GetPatientById(patientId);
+                if (patient != null)
+                {
+                    userName.Text = patient.UserName;
+                    Phone.Text = patient.Phone.ToString();
+                    ServiceID.Text = patient.ServiceId.ToString();
+                }
+                else
+                {
+                    MessageBox.Show("Patient not found");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Invalid patient ID");
+            }
+
         }
     }
         }
