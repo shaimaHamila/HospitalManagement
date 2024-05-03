@@ -40,10 +40,10 @@ namespace api.Controllers
         [HttpPost]
         public async Task<IActionResult> CreatePatient([FromBody] PatientCreationDto patientDto)
         {
-            var result = await _patientService.CreatePatient(patientDto);
-            if (result)
+            var (newPatient, res) = await _patientService.CreatePatient(patientDto);
+            if (res)
             {
-                return Ok("Patient created successfully");
+                return Ok(newPatient);
             }
             return BadRequest("Failed to create patient");
         }
@@ -54,7 +54,7 @@ namespace api.Controllers
             var result = await _patientService.UpdatePatient(id, patientDto);
             if (result)
             {
-                return Ok($"Patient with ID {id} updated successfully");
+                return Ok(new { patientDto, id });
             }
             return NotFound($"Patient with ID {id} not found");
         }

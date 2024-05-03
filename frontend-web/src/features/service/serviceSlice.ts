@@ -5,6 +5,7 @@ import { service } from "../../types/Service";
 
 interface serviceState {
   services: service[];
+  service: service;
   status: "idle" | "loading" | "failed";
   error?: string;
   count: number;
@@ -14,6 +15,11 @@ const initialState: serviceState = {
   services: [],
   status: "idle",
   count: 0,
+  service: {
+    id: 0,
+    name: "",
+    description: "",
+  },
 };
 
 export const fetchServices = createAsyncThunk<service[]>("services/fetchServices", async () => {
@@ -59,11 +65,27 @@ export const deleteService = createAsyncThunk<string, string, { state: RootState
 );
 
 export const updateService = createAsyncThunk<service, service, { state: RootState }>(
-  "services/updateservice",
+  "services/updateService",
   async (updatedService) => {
     return new Promise<service>((resolve, reject) => {
       api
         .put("/service/" + updatedService.id, updatedService)
+        .then((response) => {
+          resolve(response.data);
+        })
+        .catch((error) => {
+          reject(error);
+        });
+    });
+  },
+);
+
+export const getServiceById = createAsyncThunk<service, number, { state: RootState }>(
+  "services/getServiceById",
+  async (id) => {
+    return new Promise<service>((resolve, reject) => {
+      api
+        .get("/service/" + id)
         .then((response) => {
           resolve(response.data);
         })
@@ -139,6 +161,17 @@ const serviceSlice = createSlice({
       .addCase(updateService.rejected, (state, action) => {
         state.status = "failed";
         state.error = action.error.message;
+      })
+      .addCase(getServiceById.pending, (state) => {
+        state.status = "loading";
+      })
+      .addCase(getServiceById.fulfilled, (state, action) => {
+        state.service = action.payload;
+        state.status = "idle";
+      })
+      .addCase(getServiceById.rejected, (state, action) => {
+        state.status = "failed";
+        state.error = action.error.message;
       });
   },
 });
@@ -148,6 +181,8 @@ export const getserviceState = (state: RootState) => state.service;
 export const selectStatus = (state: RootState) => state.service.status;
 
 export const selectServices = (state: RootState) => state.service.services;
+
+export const selectService = (state: RootState) => state.service.service;
 
 export const selectError = (state: RootState) => state.service.error;
 

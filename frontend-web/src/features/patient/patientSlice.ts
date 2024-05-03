@@ -5,24 +5,24 @@ import { RootState } from "../../store/store";
 import api from "../../api/AxiosConfig";
 
 interface PatientState {
-  patient: Patient[];
+  patients: Patient[];
   status: "idle" | "loading" | "failed";
   error?: string;
   count: number;
 }
 
 const initialState: PatientState = {
-  patient: [],
+  patients: [],
   status: "idle",
   count: 0,
 };
 
-export const fetchPatient = createAsyncThunk<{ patient: Patient[] }>("patients/fetchPatient", async () => {
+export const fetchPatients = createAsyncThunk<{ patient: Patient[] }>("patients/fetchPatients", async () => {
   try {
     const response = await api.get("/Patient");
 
     return {
-      patient: response.data.data,
+      patient: response.data,
     };
   } catch (error: any) {
     throw error;
@@ -36,7 +36,7 @@ export const addPatient = createAsyncThunk<Patient, Partial<Patient>, { state: R
       api
         .post("/Patient", newPatient)
         .then((response) => {
-          resolve(response.data.data);
+          resolve(response.data);
         })
         .catch((error) => {
           reject(error);
@@ -65,12 +65,18 @@ export const deletePatient = createAsyncThunk<string, string, { state: RootState
 export const updatePatient = createAsyncThunk<Patient, Patient, { state: RootState }>(
   "patients/updatePatient",
   async (updatedPatient) => {
-    let { id, ...newPatient } = updatedPatient;
-    return new Promise<Patient>((resolve, reject) => {
+    return new Promise<any>((resolve, reject) => {
       api
-        .patch("/Patient/" + id, newPatient)
+        .put("/Patient/" + updatedPatient.id, updatedPatient)
         .then((response) => {
-          resolve(response.data.data);
+          var newPatient: Patient = {
+            id: response.data.id,
+            userName: response.data.patientDto.userName,
+            phone: response.data.patientDto.phone,
+            serviceId: response.data.patientDto.serviceId,
+          };
+
+          resolve(newPatient);
         })
         .catch((error) => {
           reject(error);
@@ -79,20 +85,20 @@ export const updatePatient = createAsyncThunk<Patient, Patient, { state: RootSta
   },
 );
 
-const patientlice = createSlice({
+const patientSlice = createSlice({
   name: "patient",
   initialState,
   reducers: {},
   extraReducers: (builder) => {
     builder
-      .addCase(fetchPatient.pending, (state) => {
+      .addCase(fetchPatients.pending, (state) => {
         state.status = "loading";
       })
-      .addCase(fetchPatient.fulfilled, (state, action) => {
-        state.patient = action.payload.patient;
+      .addCase(fetchPatients.fulfilled, (state, action) => {
+        state.patients = action.payload.patient;
         state.status = "idle";
       })
-      .addCase(fetchPatient.rejected, (state, action) => {
+      .addCase(fetchPatients.rejected, (state, action) => {
         state.status = "failed";
         state.error = action.error.message;
       })
@@ -102,9 +108,9 @@ const patientlice = createSlice({
       .addCase(addPatient.fulfilled, (state, action) => {
         state.status = "idle";
         // check if the patient is already in the list
-        const index = state.patient.findIndex((Patient) => Patient.id === action.payload.id);
+        const index = state.patients.findIndex((Patient) => Patient.id === action.payload.id);
         if (index == -1) {
-          state.patient.unshift(action.payload);
+          state.patients.unshift(action.payload);
           state.count++;
         }
       })
@@ -117,9 +123,9 @@ const patientlice = createSlice({
       })
       .addCase(deletePatient.fulfilled, (state, action) => {
         state.status = "idle";
-        const index = state.patient.findIndex((Patient) => Patient.id === parseInt(action.payload));
+        const index = state.patients.findIndex((Patient) => Patient.id === parseInt(action.payload));
         if (index !== -1) {
-          state.patient.splice(index, 1);
+          state.patients.splice(index, 1);
           state.count--;
         }
       })
@@ -132,11 +138,11 @@ const patientlice = createSlice({
       })
       .addCase(updatePatient.fulfilled, (state, action) => {
         state.status = "idle";
-        const index = state.patient.findIndex((Patient) => Patient.id === action.payload.id);
+        const index = state.patients.findIndex((Patient) => Patient.id === action.payload.id);
         if (index !== -1) {
           // check if the Patient is different from the one in the list
-          if (JSON.stringify(state.patient[index]) !== JSON.stringify(action.payload)) {
-            state.patient[index] = action.payload;
+          if (JSON.stringify(state.patients[index]) !== JSON.stringify(action.payload.id)) {
+            state.patients[index] = action.payload;
           }
         }
       })
@@ -151,6 +157,8 @@ export const getPatientState = (state: RootState) => state.patient;
 
 export const selectStatus = (state: RootState) => state.patient.status;
 
+export const selectPatients = (state: RootState) => state.patient.patients;
+
 export const selectError = (state: RootState) => state.patient.error;
 
-export default patientlice.reducer;
+export default patientSlice.reducer;
