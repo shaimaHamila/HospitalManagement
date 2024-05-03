@@ -112,7 +112,7 @@ const Patients: React.FC<PatientsProps> = ({
           dataSource={tableContent}
           rowKey='id'
           pagination={false}
-          // scroll={{ y: 500 }}
+          scroll={{ y: 380 }}
         />
       </div>
     </div>

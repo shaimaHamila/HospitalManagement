@@ -5,7 +5,7 @@ const DrawerComponent: React.FC<DrawerComponentProps> = ({ isOpen, handleClose, 
   return (
     <Drawer
       title={title}
-      width={"80%"}
+      width={"40%"}
       open={isOpen}
       onClose={handleClose}
       destroyOnClose={true}

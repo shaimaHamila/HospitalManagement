@@ -1,7 +1,5 @@
 # React Boilerplate with TypeScript, Redux Toolkit, Axios, Routing, Docker, Prettier
 
-This boilerplate provides a solid foundation for building React applications with TypeScript, Redux Toolkit for state management, Axios for HTTP requests, React Router for routing, Docker for containerization, and Prettier for code formatting.
-
 ## Features
 
 - **TypeScript**: Strongly typed language for enhanced code quality and developer productivity.
