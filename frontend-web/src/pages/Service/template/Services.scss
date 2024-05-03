@@ -1,0 +1,22 @@
+.service-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  &--header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    &-actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &-search {
+        min-width: 290px;
+      }
+    }
+  }
+}
+.table--action-btn {
+  border-color: transparent;
+  background-color: transparent;
+}
