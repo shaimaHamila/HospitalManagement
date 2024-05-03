@@ -3,32 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|solutionrelative:patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|solutionrelative:service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\searchdoctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|solutionrelative:searchdoctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|solutionrelative:doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|c:\\users\\jribi\\onedrive\\bureau\\projectc#\\hospitalmanagement\\appdesktop\\appdesktop\\apiservice\\serviceapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|solutionrelative:service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\apiservice\\serviceapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|solutionrelative:apiservice\\serviceapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\dto\\doctordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|solutionrelative:dto\\doctordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|solutionrelative:patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\adddoctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|solutionrelative:adddoctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|c:\\users\\jribi\\onedrive\\bureau\\projectc#\\hospitalmanagement\\appdesktop\\appdesktop\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|solutionrelative:patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|solutionrelative:doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\apiservice\\patientapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|solutionrelative:apiservice\\patientapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\menuhopital.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -39,20 +39,24 @@
       "RelativeMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|solutionrelative:menuhopital.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\searchdoctor.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|solutionrelative:searchdoctor.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|solutionrelative:doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\apiservice\\doctorapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|solutionrelative:apiservice\\doctorapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\dto\\doctordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|solutionrelative:dto\\doctordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\adddoctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|solutionrelative:adddoctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\dto\\doctorservicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -67,28 +71,8 @@
       "RelativeMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|solutionrelative:dto\\patientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|solutionrelative:patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|solutionrelative:service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\apiservice\\patientapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|solutionrelative:apiservice\\patientapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\service.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|solutionrelative:service.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\searchdoctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|solutionrelative:searchdoctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\searchdoctor.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
-      "RelativeMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|solutionrelative:searchdoctor.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{310CD4F6-B0EB-43BD-8E43-BE2D4704F7FF}|AppDesktop.csproj|C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
@@ -110,7 +94,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -118,7 +102,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Service.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\Service.cs",
               "RelativeDocumentMoniker": "Service.cs",
@@ -130,15 +114,66 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DoctorDto.cs",
-              "DocumentMoniker": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\Dto\\DoctorDto.cs",
-              "RelativeDocumentMoniker": "Dto\\DoctorDto.cs",
-              "ToolTip": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\Dto\\DoctorDto.cs",
-              "RelativeToolTip": "Dto\\DoctorDto.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABMAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "Service.cs",
+              "DocumentMoniker": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\Service.cs",
+              "RelativeDocumentMoniker": "Service.cs",
+              "ToolTip": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\Service.cs",
+              "RelativeToolTip": "Service.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAiwDAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T23:04:02.592Z"
+              "WhenOpened": "2024-05-03T01:07:06.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PatientApiService.cs",
+              "DocumentMoniker": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\APIservice\\PatientApiService.cs",
+              "RelativeDocumentMoniker": "APIservice\\PatientApiService.cs",
+              "ToolTip": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\APIservice\\PatientApiService.cs",
+              "RelativeToolTip": "APIservice\\PatientApiService.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAQwBkAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T00:57:49.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\Patient.cs",
+              "RelativeDocumentMoniker": "Patient.cs",
+              "ToolTip": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\Patient.cs",
+              "RelativeToolTip": "Patient.cs",
+              "ViewState": "AQIAAMEAAAAAAAAAAAAUwNQAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T03:38:20.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Patient.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\Patient.cs",
+              "RelativeDocumentMoniker": "Patient.cs",
+              "ToolTip": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\Patient.cs [Design]",
+              "RelativeToolTip": "Patient.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T03:37:28.498Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Doctor.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\Doctor.cs",
+              "RelativeDocumentMoniker": "Doctor.cs",
+              "ToolTip": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\Doctor.cs [Design]",
+              "RelativeToolTip": "Doctor.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T04:07:57.602Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -155,31 +190,83 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SearchDoctor.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\SearchDoctor.cs",
-              "RelativeDocumentMoniker": "SearchDoctor.cs",
-              "ToolTip": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\SearchDoctor.cs [Design]",
-              "RelativeToolTip": "SearchDoctor.cs [Design]",
+              "DocumentIndex": 7,
+              "Title": "MenuHopital.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\MenuHopital.cs",
+              "RelativeDocumentMoniker": "MenuHopital.cs",
+              "ToolTip": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\MenuHopital.cs [Design]",
+              "RelativeToolTip": "MenuHopital.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T11:27:08.279Z",
+              "WhenOpened": "2024-05-01T11:18:13.459Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Patient.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\Patient.cs",
-              "RelativeDocumentMoniker": "Patient.cs",
-              "ToolTip": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\Patient.cs [Design]",
-              "RelativeToolTip": "Patient.cs [Design]",
+              "DocumentIndex": 8,
+              "Title": "MenuHopital.cs",
+              "DocumentMoniker": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\MenuHopital.cs",
+              "RelativeDocumentMoniker": "MenuHopital.cs",
+              "ToolTip": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\MenuHopital.cs",
+              "RelativeToolTip": "MenuHopital.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAkwA4AAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T03:37:28.498Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-01T11:19:50.829Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
+              "Title": "Doctor.cs",
+              "DocumentMoniker": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\Doctor.cs",
+              "RelativeDocumentMoniker": "Doctor.cs",
+              "ToolTip": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\Doctor.cs",
+              "RelativeToolTip": "Doctor.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAwC4AAABvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T04:16:19.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DoctorApiService.cs",
+              "DocumentMoniker": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\APIservice\\DoctorApiService.cs",
+              "RelativeDocumentMoniker": "APIservice\\DoctorApiService.cs",
+              "ToolTip": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\APIservice\\DoctorApiService.cs",
+              "RelativeToolTip": "APIservice\\DoctorApiService.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAkwBoAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T23:28:37.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T11:27:56.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DoctorDto.cs",
+              "DocumentMoniker": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\Dto\\DoctorDto.cs",
+              "RelativeDocumentMoniker": "Dto\\DoctorDto.cs",
+              "ToolTip": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\Dto\\DoctorDto.cs",
+              "RelativeToolTip": "Dto\\DoctorDto.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T23:04:02.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "ADDdoctor.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\ADDdoctor.cs",
               "RelativeDocumentMoniker": "ADDdoctor.cs",
@@ -190,90 +277,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Doctor.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\Doctor.cs",
-              "RelativeDocumentMoniker": "Doctor.cs",
-              "ToolTip": "C:\\Users\\Jribi\\OneDrive\\Bureau\\AppDesktop\\AppDesktop\\Doctor.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\AppDesktop\\AppDesktop\\Doctor.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T04:07:57.602Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MenuHopital.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\MenuHopital.cs",
-              "RelativeDocumentMoniker": "MenuHopital.cs",
-              "ToolTip": "C:\\Users\\Jribi\\OneDrive\\Bureau\\AppDesktop\\AppDesktop\\MenuHopital.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\AppDesktop\\AppDesktop\\MenuHopital.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T11:18:13.459Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "MenuHopital.cs",
-              "DocumentMoniker": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\MenuHopital.cs",
-              "RelativeDocumentMoniker": "MenuHopital.cs",
-              "ToolTip": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\MenuHopital.cs",
-              "RelativeToolTip": "MenuHopital.cs",
-              "ViewState": "AQIAADIAAAAAAAAAAAAIwEEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T11:19:50.829Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T11:27:56.019Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "SearchDoctor.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\SearchDoctor.Designer.cs",
-              "RelativeDocumentMoniker": "SearchDoctor.Designer.cs",
-              "ToolTip": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\SearchDoctor.Designer.cs",
-              "RelativeToolTip": "SearchDoctor.Designer.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAuwHAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T00:37:53.718Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Doctor.cs",
-              "DocumentMoniker": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\Doctor.cs",
-              "RelativeDocumentMoniker": "Doctor.cs",
-              "ToolTip": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\Doctor.cs",
-              "RelativeToolTip": "Doctor.cs",
-              "ViewState": "AQIAAKMAAAAAAAAAAAAuwLsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T04:16:19.899Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "DoctorApiService.cs",
-              "DocumentMoniker": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\APIservice\\DoctorApiService.cs",
-              "RelativeDocumentMoniker": "APIservice\\DoctorApiService.cs",
-              "ToolTip": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\APIservice\\DoctorApiService.cs",
-              "RelativeToolTip": "APIservice\\DoctorApiService.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAAwDsAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T23:28:37.052Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "DoctorServiceDto.cs",
               "DocumentMoniker": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\Dto\\DoctorServiceDto.cs",
               "RelativeDocumentMoniker": "Dto\\DoctorServiceDto.cs",
@@ -285,7 +289,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "ServiceDto.cs",
               "DocumentMoniker": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\Dto\\ServiceDto.cs",
               "RelativeDocumentMoniker": "Dto\\ServiceDto.cs",
@@ -297,7 +301,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "PatientDto.cs",
               "DocumentMoniker": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\Dto\\PatientDto.cs",
               "RelativeDocumentMoniker": "Dto\\PatientDto.cs",
@@ -309,45 +313,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Patient.cs",
-              "DocumentMoniker": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\Patient.cs",
-              "RelativeDocumentMoniker": "Patient.cs",
-              "ToolTip": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\Patient.cs",
-              "RelativeToolTip": "Patient.cs",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAywD0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T03:38:20.595Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "Service.cs",
-              "DocumentMoniker": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\Service.cs",
-              "RelativeDocumentMoniker": "Service.cs",
-              "ToolTip": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\Service.cs",
-              "RelativeToolTip": "Service.cs",
-              "ViewState": "AQIAAFQAAAAAAAAAAADwv2IAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T01:07:06.825Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "PatientApiService.cs",
-              "DocumentMoniker": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\APIservice\\PatientApiService.cs",
-              "RelativeDocumentMoniker": "APIservice\\PatientApiService.cs",
-              "ToolTip": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\APIservice\\PatientApiService.cs",
-              "RelativeToolTip": "APIservice\\PatientApiService.cs",
-              "ViewState": "AQIAADYAAAAAAAAAAAAowBkAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T00:57:49.718Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
               "Title": "Service.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\Service.Designer.cs",
               "RelativeDocumentMoniker": "Service.Designer.cs",
@@ -360,32 +326,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "SearchDoctor.cs",
-              "DocumentMoniker": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\SearchDoctor.cs",
-              "RelativeDocumentMoniker": "SearchDoctor.cs",
-              "ToolTip": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\SearchDoctor.cs",
-              "RelativeToolTip": "SearchDoctor.cs",
-              "ViewState": "AQIAADYAAAAAAAAAAAAQwEkAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T23:54:26.261Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "SearchDoctor.resx",
-              "DocumentMoniker": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\SearchDoctor.resx",
-              "RelativeDocumentMoniker": "SearchDoctor.resx",
-              "ToolTip": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\SearchDoctor.resx",
-              "RelativeToolTip": "SearchDoctor.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-05-03T00:38:46.762Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 18,
               "Title": "App.config",
               "DocumentMoniker": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\App.config",
               "RelativeDocumentMoniker": "App.config",
@@ -393,11 +334,12 @@
               "RelativeToolTip": "App.config",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-05-02T23:04:08.148Z"
+              "WhenOpened": "2024-05-02T23:04:08.148Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 19,
               "Title": "MenuHopital.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\MenuHopital.Designer.cs",
               "RelativeDocumentMoniker": "MenuHopital.Designer.cs",
@@ -405,18 +347,20 @@
               "RelativeToolTip": "MenuHopital.Designer.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAAAwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T11:20:21.162Z"
+              "WhenOpened": "2024-05-01T11:20:21.162Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 20,
               "Title": "MenuHopital.resx",
               "DocumentMoniker": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\MenuHopital.resx",
               "RelativeDocumentMoniker": "MenuHopital.resx",
               "ToolTip": "C:\\Users\\Jribi\\OneDrive\\Bureau\\projectC#\\HospitalManagement\\AppDesktop\\AppDesktop\\MenuHopital.resx",
               "RelativeToolTip": "MenuHopital.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-05-01T11:20:19.382Z"
+              "WhenOpened": "2024-05-01T11:20:19.382Z",
+              "EditorCaption": ""
             }
           ]
         }

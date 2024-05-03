@@ -109,12 +109,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SearchDoctor.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SearchDoctor.Designer.cs">
-      <DependentUpon>SearchDoctor.cs</DependentUpon>
-    </Compile>
     <Compile Include="Service.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,9 +133,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="SearchDoctor.resx">
-      <DependentUpon>SearchDoctor.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Service.resx">
       <DependentUpon>Service.cs</DependentUpon>
     </EmbeddedResource>

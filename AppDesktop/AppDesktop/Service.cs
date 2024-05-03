@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace AppDesktop
 {
@@ -60,21 +61,18 @@ namespace AppDesktop
 
         private async void ADD_Click(object sender, EventArgs e)
         {
-            // Create a new service object
+       
             ServiceDto newService = new ServiceDto
             {
                 Name = name.Text,
                 Description = description.Text
             };
-
-            // Call the CreateService method of ServiceApiService
             bool result = await _serviceApiService.CreateService(newService);
 
-            // Display a message based on the result
             if (result)
             {
                 MessageBox.Show("Service added successfully");
-                // Reload the list of services
+               
                 await UpdateServices();
             }
             else
@@ -169,6 +167,34 @@ namespace AppDesktop
             else
             {
                 MessageBox.Show("Failed to update service");
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MenuHopital menu = new MenuHopital();
+            menu.Show();
+        }
+
+        private async void button1_Click(object sender, EventArgs e)
+        {
+            if (int.TryParse(Remove.Text, out int serviceId))
+            {
+                ServiceDto service = await _serviceApiService.GetServiceById(serviceId);
+                if (service != null)
+                {
+                    name.Text = service.Name;
+                    description.Text = service.Description;
+                }
+                else
+                {
+                    MessageBox.Show("Service not found");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Invalid service ID");
             }
         }
     }
