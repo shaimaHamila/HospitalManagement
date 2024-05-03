@@ -35,6 +35,7 @@ namespace api.Controllers
             {
                 return NotFound($"Doctor with ID {id} not found");
             }
+
             return Ok(doctor);
         }
 

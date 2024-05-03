@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0CF0F997-52E2-4ECD-A2B1-903080AB3BB4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>vues</RootNamespace>
+    <AssemblyName>vues</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.10.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\GestionVenteKhemakhem\Vue\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FActualiserMedecin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FActualiserMedecin.Designer.cs">
+      <DependentUpon>FActualiserMedecin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FActualiserMedecinMD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FActualiserMedecinMD.Designer.cs">
+      <DependentUpon>FActualiserMedecinMD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FAffectationService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAffectationService.Designer.cs">
+      <DependentUpon>FAffectationService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionMedecin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionMedecin.Designer.cs">
+      <DependentUpon>GestionMedecin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionService.Designer.cs">
+      <DependentUpon>GestionService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuHopital.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuHopital.Designer.cs">
+      <DependentUpon>MenuHopital.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FActualiserMedecin.resx">
+      <DependentUpon>FActualiserMedecin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FActualiserMedecinMD.resx">
+      <DependentUpon>FActualiserMedecinMD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAffectationService.resx">
+      <DependentUpon>FAffectationService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionMedecin.resx">
+      <DependentUpon>GestionMedecin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionService.resx">
+      <DependentUpon>GestionService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuHopital.resx">
+      <DependentUpon>MenuHopital.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\controller\controller.csproj">
+      <Project>{678f0f88-5d83-4b4f-9604-ba9df17c2afb}</Project>
+      <Name>controller</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\daoSqlServer14\daoSqlServer14.csproj">
+      <Project>{4f00942c-b567-48f5-9101-aea0f049665a}</Project>
+      <Name>daoSqlServer14</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\metiers\metiers.csproj">
+      <Project>{0b029882-cba8-4277-b834-cf8d9c1f2e77}</Project>
+      <Name>metiers</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
