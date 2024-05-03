@@ -105,7 +105,7 @@ const Services: React.FC<ServicesProps> = ({
           dataSource={tableContent}
           rowKey='id'
           pagination={false}
-          // scroll={{ y: 500 }}
+          scroll={{ y: 380 }}
         />
       </div>
     </div>
