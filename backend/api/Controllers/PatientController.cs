@@ -70,4 +70,6 @@ namespace api.Controllers
             return NotFound($"Patient with ID {id} not found");
         }
     }
+
 }
+
