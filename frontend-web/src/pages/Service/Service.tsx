@@ -71,7 +71,6 @@ const Service: React.FC = () => {
                 setIsDrawerOpen(false);
                 //TODO add popup created successfuly
                 console.log("onSubmit orderrrrrrrrrrrrr", service);
-                console.log("drawerContent drawerContent", drawerContent);
               }}
               service={drawerContent === "update" ? serviceToUpdate : undefined}
             />

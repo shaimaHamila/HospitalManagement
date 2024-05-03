@@ -12,7 +12,7 @@ namespace Services.ServiceService
         Task<IEnumerable<Service>> GetAllServices();
         Task<Service> GetServiceById(int id);
         Task<bool> ServiceExists(int id);
-        Task<bool> CreateService(Service service);
+        Task<(Service service, bool success)> CreateService(Service service);
         Task<bool> UpdateService(int id, Service service);
         Task<bool> DeleteService(int id);
         Task<bool> SaveService();

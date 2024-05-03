@@ -33,10 +33,11 @@ namespace Services.ServiceService
             return await _context.Services.AnyAsync(s => s.Id == id);
         }
 
-        public async Task<bool> CreateService(Service service)
+        public async Task<(Service service, bool success)> CreateService(Service service)
         {
             _context.Services.Add(service);
-            return await SaveService();
+           var res = await SaveService();
+            return (service, res);
         }
 
         public async Task<bool> UpdateService(int id, Service service)

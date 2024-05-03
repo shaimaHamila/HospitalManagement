@@ -4,9 +4,9 @@ export type Doctor = {
   lastName: string;
   birthday: string;
   address: string;
-  speciality: string;
-  location: string;
-  experience: number;
-  description: string;
-  available: boolean;
+  // speciality: string;
+  // location: string;
+  // experience: number;
+  // description: string;
+  // available: boolean;
 };

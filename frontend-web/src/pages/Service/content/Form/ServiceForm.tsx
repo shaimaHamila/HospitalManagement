@@ -20,23 +20,16 @@ const ServiceForm: React.FC<ServiceFormProps> = ({ service, onSubmit }) => {
 
   return (
     <Form form={form} initialValues={initialValues} onFinish={handleSubmit} layout='vertical'>
+      {/* Hidden input field for id */}
+      {service && (
+        <Form.Item name='id' style={{ display: "none" }}>
+          <Input type='hidden' />
+        </Form.Item>
+      )}
       <Form.Item label='Name' name='name' rules={[{ required: true, message: "Please enter the service name" }]}>
         <Input />
       </Form.Item>
-      <Form.Item
-        label='Speciality'
-        name='speciality'
-        rules={[{ required: true, message: "Please enter the speciality" }]}
-      >
-        <Input />
-      </Form.Item>
-      <Form.Item
-        label='Contact Number'
-        name='contactNumber'
-        rules={[{ required: true, message: "Please enter the Contact Number" }]}
-      >
-        <Input />
-      </Form.Item>
+
       <Form.Item
         label='Description'
         name='description'

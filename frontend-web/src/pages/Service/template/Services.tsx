@@ -26,8 +26,6 @@ const Services: React.FC<ServicesProps> = ({
       id: service.id,
       name: service.name,
       description: service.description,
-      speciality: service.speciality,
-      contactNumber: service.contactNumber,
     }));
     setTableContent(tableContent);
     setcountServices(tableContent.length);
@@ -35,7 +33,7 @@ const Services: React.FC<ServicesProps> = ({
 
   const columns: TableProps<service>["columns"] = [
     {
-      title: "",
+      title: "ID",
       dataIndex: "id",
       key: "id",
       width: 50,
@@ -45,16 +43,6 @@ const Services: React.FC<ServicesProps> = ({
       dataIndex: "name",
       key: "name",
       render: (text) => <div style={{ display: "flex", gap: "6px" }}>{text}</div>,
-    },
-    {
-      title: "Speciality",
-      dataIndex: "speciality",
-      key: "speciality",
-    },
-    {
-      title: "Contact Number",
-      dataIndex: "contactNumber",
-      key: "contactNumber",
     },
     {
       title: "Description",
@@ -87,31 +75,6 @@ const Services: React.FC<ServicesProps> = ({
     },
   ];
 
-  //To remove and get the data from the backend services
-  const data: service[] = [
-    {
-      id: 1,
-      name: "test1",
-      speciality: "Salah Ben salah",
-      contactNumber: 22016583,
-      description: "Jan 1, 2024 12:13",
-    },
-    {
-      id: 2,
-      name: "test",
-      speciality: "Salah Ben salah",
-      contactNumber: 22016583,
-      description: "Jan 1, 2024 12:13",
-    },
-    {
-      id: 3,
-      name: "Tast",
-      speciality: "Salah Ben salah",
-      contactNumber: 22016583,
-      description: "Jan 1, 2024 12:13",
-    },
-  ];
-
   return (
     <div className='service-container'>
       <div className='service-container--header'>
@@ -139,7 +102,7 @@ const Services: React.FC<ServicesProps> = ({
         <Table
           loading={status == "loading"}
           columns={columns}
-          dataSource={data}
+          dataSource={tableContent}
           rowKey='id'
           pagination={false}
           // scroll={{ y: 500 }}

@@ -60,13 +60,12 @@ export const deleteService = createAsyncThunk<string, string, { state: RootState
 
 export const updateService = createAsyncThunk<service, service, { state: RootState }>(
   "services/updateservice",
-  async (updatedservice) => {
-    let { id, ...newservice } = updatedservice;
+  async (updatedService) => {
     return new Promise<service>((resolve, reject) => {
       api
-        .put("/service/" + id, newservice)
+        .put("/service/" + updatedService.id, updatedService)
         .then((response) => {
-          resolve(response.data.data);
+          resolve(response.data);
         })
         .catch((error) => {
           reject(error);
@@ -128,6 +127,7 @@ const serviceSlice = createSlice({
       })
       .addCase(updateService.fulfilled, (state, action) => {
         state.status = "idle";
+
         const index = state.services.findIndex((service) => service.id === action.payload.id);
         if (index !== -1) {
           // check if the service is different from the one in the list
